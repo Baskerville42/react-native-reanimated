@@ -12,6 +12,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		370FF533299D65A900A733A9 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370FF532299D65A900A733A9 /* AuthenticationServices.framework */; };
+		370FF537299D65A900A733A9 /* CredentialProviderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 370FF536299D65A900A733A9 /* CredentialProviderViewController.m */; };
+		370FF53A299D65A900A733A9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370FF538299D65A900A733A9 /* MainInterface.storyboard */; };
+		370FF53F299D65A900A733A9 /* ReanimatedAutofillExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 370FF531299D65A900A733A9 /* ReanimatedAutofillExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37C8D8D0D2D9F1668898A4D8 /* libPods-ReanimatedExample-ReanimatedAutofillExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8188F27F12CD0FFF5073A4 /* libPods-ReanimatedExample-ReanimatedAutofillExtension.a */; };
 		7699B88040F8A987B510C191 /* libPods-ReanimatedExample-ReanimatedExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReanimatedExample-ReanimatedExampleTests.a */; };
 		C29CFC1D29193CAB008EC329 /* MBFingerTipWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C29CFC1B29193CAB008EC329 /* MBFingerTipWindow.m */; };
 		C2EC89A629193D3700E7DEFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2EC89A429193D3700E7DEFA /* LaunchScreen.xib */; };
@@ -25,7 +30,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = ReanimatedExample;
 		};
+		370FF53D299D65A900A733A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 370FF530299D65A900A733A9;
+			remoteInfo = ReanimatedAutofillExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		370FF540299D65A900A733A9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				370FF53F299D65A900A733A9 /* ReanimatedAutofillExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* ReanimatedExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReanimatedExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,14 +64,25 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReanimatedExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReanimatedExample/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReanimatedExample-ReanimatedExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedExample-ReanimatedExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		370FF531299D65A900A733A9 /* ReanimatedAutofillExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReanimatedAutofillExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		370FF532299D65A900A733A9 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		370FF535299D65A900A733A9 /* CredentialProviderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CredentialProviderViewController.h; sourceTree = "<group>"; };
+		370FF536299D65A900A733A9 /* CredentialProviderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CredentialProviderViewController.m; sourceTree = "<group>"; };
+		370FF539299D65A900A733A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		370FF53B299D65A900A733A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		370FF53C299D65A900A733A9 /* ReanimatedAutofillExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReanimatedAutofillExtension.entitlements; sourceTree = "<group>"; };
+		370FF544299D662100A733A9 /* ReanimatedExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReanimatedExample.entitlements; path = ReanimatedExample/ReanimatedExample.entitlements; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReanimatedExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample/Pods-ReanimatedExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReanimatedExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample/Pods-ReanimatedExample.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ReanimatedExample-ReanimatedExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample-ReanimatedExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample-ReanimatedExampleTests/Pods-ReanimatedExample-ReanimatedExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReanimatedExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BBFBDB2B19F30C991ED079A /* Pods-ReanimatedExample-ReanimatedAutofillExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample-ReanimatedAutofillExtension.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample-ReanimatedAutofillExtension/Pods-ReanimatedExample-ReanimatedAutofillExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		78E36109791718227B1E61C2 /* Pods-ReanimatedExample-ReanimatedAutofillExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample-ReanimatedAutofillExtension.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample-ReanimatedAutofillExtension/Pods-ReanimatedExample-ReanimatedAutofillExtension.release.xcconfig"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReanimatedExample-ReanimatedExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample-ReanimatedExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample-ReanimatedExampleTests/Pods-ReanimatedExample-ReanimatedExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		C29CFC1B29193CAB008EC329 /* MBFingerTipWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBFingerTipWindow.m; sourceTree = "<group>"; };
 		C29CFC1C29193CAB008EC329 /* MBFingerTipWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBFingerTipWindow.h; sourceTree = "<group>"; };
 		C2EC89A529193D3700E7DEFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = ReanimatedExample/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DF8188F27F12CD0FFF5073A4 /* libPods-ReanimatedExample-ReanimatedAutofillExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReanimatedExample-ReanimatedAutofillExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -63,6 +100,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-ReanimatedExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370FF52E299D65A900A733A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370FF533299D65A900A733A9 /* AuthenticationServices.framework in Frameworks */,
+				37C8D8D0D2D9F1668898A4D8 /* libPods-ReanimatedExample-ReanimatedAutofillExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +135,7 @@
 		13B07FAE1A68108700A75B9A /* ReanimatedExample */ = {
 			isa = PBXGroup;
 			children = (
+				370FF544299D662100A733A9 /* ReanimatedExample.entitlements */,
 				C2EC89A429193D3700E7DEFA /* LaunchScreen.xib */,
 				C29CFC1C29193CAB008EC329 /* MBFingerTipWindow.h */,
 				C29CFC1B29193CAB008EC329 /* MBFingerTipWindow.m */,
@@ -107,8 +154,22 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-ReanimatedExample.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReanimatedExample-ReanimatedExampleTests.a */,
+				370FF532299D65A900A733A9 /* AuthenticationServices.framework */,
+				DF8188F27F12CD0FFF5073A4 /* libPods-ReanimatedExample-ReanimatedAutofillExtension.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		370FF534299D65A900A733A9 /* ReanimatedAutofillExtension */ = {
+			isa = PBXGroup;
+			children = (
+				370FF535299D65A900A733A9 /* CredentialProviderViewController.h */,
+				370FF536299D65A900A733A9 /* CredentialProviderViewController.m */,
+				370FF538299D65A900A733A9 /* MainInterface.storyboard */,
+				370FF53B299D65A900A733A9 /* Info.plist */,
+				370FF53C299D65A900A733A9 /* ReanimatedAutofillExtension.entitlements */,
+			);
+			path = ReanimatedAutofillExtension;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -124,6 +185,7 @@
 				13B07FAE1A68108700A75B9A /* ReanimatedExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReanimatedExampleTests */,
+				370FF534299D65A900A733A9 /* ReanimatedAutofillExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -138,6 +200,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* ReanimatedExample.app */,
 				00E356EE1AD99517003FC87E /* ReanimatedExampleTests.xctest */,
+				370FF531299D65A900A733A9 /* ReanimatedAutofillExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +212,8 @@
 				5709B34CF0A7D63546082F79 /* Pods-ReanimatedExample.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-ReanimatedExample-ReanimatedExampleTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-ReanimatedExample-ReanimatedExampleTests.release.xcconfig */,
+				6BBFBDB2B19F30C991ED079A /* Pods-ReanimatedExample-ReanimatedAutofillExtension.debug.xcconfig */,
+				78E36109791718227B1E61C2 /* Pods-ReanimatedExample-ReanimatedAutofillExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -189,15 +254,36 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				370FF540299D65A900A733A9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				370FF53E299D65A900A733A9 /* PBXTargetDependency */,
 			);
 			name = ReanimatedExample;
 			productName = ReanimatedExample;
 			productReference = 13B07F961A680F5B00A75B9A /* ReanimatedExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		370FF530299D65A900A733A9 /* ReanimatedAutofillExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 370FF543299D65A900A733A9 /* Build configuration list for PBXNativeTarget "ReanimatedAutofillExtension" */;
+			buildPhases = (
+				208790BEBBC793BAC215E898 /* [CP] Check Pods Manifest.lock */,
+				370FF52D299D65A900A733A9 /* Sources */,
+				370FF52E299D65A900A733A9 /* Frameworks */,
+				370FF52F299D65A900A733A9 /* Resources */,
+				2CF3B778CCAE309E877C8264 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReanimatedAutofillExtension;
+			productName = ReanimatedAutofillExtension;
+			productReference = 370FF531299D65A900A733A9 /* ReanimatedAutofillExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,6 +299,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					370FF530299D65A900A733A9 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -231,6 +320,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReanimatedExample */,
 				00E356ED1AD99517003FC87E /* ReanimatedExampleTests */,
+				370FF530299D65A900A733A9 /* ReanimatedAutofillExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +339,14 @@
 			files = (
 				C2EC89A629193D3700E7DEFA /* LaunchScreen.xib in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		370FF52F299D65A900A733A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370FF53A299D65A900A733A9 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +384,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReanimatedExample/Pods-ReanimatedExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		208790BEBBC793BAC215E898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReanimatedExample-ReanimatedAutofillExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CF3B778CCAE309E877C8264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedExample-ReanimatedAutofillExtension/Pods-ReanimatedExample-ReanimatedAutofillExtension-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReanimatedExample-ReanimatedAutofillExtension/Pods-ReanimatedExample-ReanimatedAutofillExtension-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReanimatedExample-ReanimatedAutofillExtension/Pods-ReanimatedExample-ReanimatedAutofillExtension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -423,6 +560,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		370FF52D299D65A900A733A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370FF537299D65A900A733A9 /* CredentialProviderViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -431,9 +576,22 @@
 			target = 13B07F861A680F5B00A75B9A /* ReanimatedExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		370FF53E299D65A900A733A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 370FF530299D65A900A733A9 /* ReanimatedAutofillExtension */;
+			targetProxy = 370FF53D299D65A900A733A9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		370FF538299D65A900A733A9 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				370FF539299D65A900A733A9 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C2EC89A429193D3700E7DEFA /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +660,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ReanimatedExample/ReanimatedExample.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ReanimatedExample/Info.plist;
@@ -529,6 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ReanimatedExample/ReanimatedExample.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ReanimatedExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -545,6 +705,78 @@
 				PRODUCT_NAME = ReanimatedExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		370FF541299D65A900A733A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBFBDB2B19F30C991ED079A /* Pods-ReanimatedExample-ReanimatedAutofillExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ReanimatedAutofillExtension/ReanimatedAutofillExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReanimatedAutofillExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReanimatedAutofillExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReanimatedExample.ReanimatedAutofillExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		370FF542299D65A900A733A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78E36109791718227B1E61C2 /* Pods-ReanimatedExample-ReanimatedAutofillExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ReanimatedAutofillExtension/ReanimatedAutofillExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReanimatedAutofillExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReanimatedAutofillExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.ReanimatedExample.ReanimatedAutofillExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -702,6 +934,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		370FF543299D65A900A733A9 /* Build configuration list for PBXNativeTarget "ReanimatedAutofillExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				370FF541299D65A900A733A9 /* Debug */,
+				370FF542299D65A900A733A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
