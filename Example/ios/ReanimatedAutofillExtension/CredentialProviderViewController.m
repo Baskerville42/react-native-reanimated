@@ -10,6 +10,9 @@
 #import <React/RCTRootView.h>
 #import <React/RCTBundleURLProvider.h>
 
+#import "ReanimatedAutofillExtensionDelegate.h"
+
+ReanimatedAutofillExtensionDelegate *autofillExtensionDelegate;
 RCTBridge *bridge;
 RCTRootView *rootView;
 
@@ -26,21 +29,14 @@ RCTRootView *rootView;
 {
   NSMutableDictionary *appPropsFinal = [appProps mutableCopy];
   [appPropsFinal setValue:@true forKey:@"isAutofillExtensionContext"];
+  
+  autofillExtensionDelegate = [[ReanimatedAutofillExtensionDelegate alloc] initWithExtensionContext:self.extensionContext];
 
-  bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:nil];
+  bridge = [[RCTBridge alloc] initWithDelegate:autofillExtensionDelegate launchOptions:nil];
 
-  rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:@"ReanimatedExample" initialProperties:appPropsFinal];
+  rootView = [[RCTRootView alloc] initWithBridge:bridge moduleName:[ReanimatedAutofillExtensionDelegate moduleNameForBridge] initialProperties:appPropsFinal];
 
   self.view = rootView;
-}
-
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
-{
-#if DEBUG
-  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
-#else
-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-#endif
 }
 
 - (void)prepareCredentialListForServiceIdentifiers:(NSArray<ASCredentialServiceIdentifier *> *)serviceIdentifiers

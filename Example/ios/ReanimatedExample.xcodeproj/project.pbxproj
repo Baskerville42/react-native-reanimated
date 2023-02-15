@@ -16,6 +16,7 @@
 		370FF537299D65A900A733A9 /* CredentialProviderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 370FF536299D65A900A733A9 /* CredentialProviderViewController.m */; };
 		370FF53A299D65A900A733A9 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 370FF538299D65A900A733A9 /* MainInterface.storyboard */; };
 		370FF53F299D65A900A733A9 /* ReanimatedAutofillExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 370FF531299D65A900A733A9 /* ReanimatedAutofillExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		370FF546299D729700A733A9 /* ReanimatedAutofillExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 370FF545299D729700A733A9 /* ReanimatedAutofillExtensionDelegate.m */; };
 		37C8D8D0D2D9F1668898A4D8 /* libPods-ReanimatedExample-ReanimatedAutofillExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8188F27F12CD0FFF5073A4 /* libPods-ReanimatedExample-ReanimatedAutofillExtension.a */; };
 		7699B88040F8A987B510C191 /* libPods-ReanimatedExample-ReanimatedExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReanimatedExample-ReanimatedExampleTests.a */; };
 		C29CFC1D29193CAB008EC329 /* MBFingerTipWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C29CFC1B29193CAB008EC329 /* MBFingerTipWindow.m */; };
@@ -72,6 +73,8 @@
 		370FF53B299D65A900A733A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370FF53C299D65A900A733A9 /* ReanimatedAutofillExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReanimatedAutofillExtension.entitlements; sourceTree = "<group>"; };
 		370FF544299D662100A733A9 /* ReanimatedExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReanimatedExample.entitlements; path = ReanimatedExample/ReanimatedExample.entitlements; sourceTree = "<group>"; };
+		370FF545299D729700A733A9 /* ReanimatedAutofillExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReanimatedAutofillExtensionDelegate.m; sourceTree = "<group>"; };
+		370FF547299D731200A733A9 /* ReanimatedAutofillExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReanimatedAutofillExtensionDelegate.h; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReanimatedExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample/Pods-ReanimatedExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReanimatedExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample.release.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample/Pods-ReanimatedExample.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ReanimatedExample-ReanimatedExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReanimatedExample-ReanimatedExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReanimatedExample-ReanimatedExampleTests/Pods-ReanimatedExample-ReanimatedExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				370FF538299D65A900A733A9 /* MainInterface.storyboard */,
 				370FF53B299D65A900A733A9 /* Info.plist */,
 				370FF53C299D65A900A733A9 /* ReanimatedAutofillExtension.entitlements */,
+				370FF545299D729700A733A9 /* ReanimatedAutofillExtensionDelegate.m */,
+				370FF547299D731200A733A9 /* ReanimatedAutofillExtensionDelegate.h */,
 			);
 			path = ReanimatedAutofillExtension;
 			sourceTree = "<group>";
@@ -564,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370FF546299D729700A733A9 /* ReanimatedAutofillExtensionDelegate.m in Sources */,
 				370FF537299D65A900A733A9 /* CredentialProviderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
